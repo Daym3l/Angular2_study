@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {OtherComponent} from "./other/other.component"
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,7 @@ import {Component} from '@angular/core';
 
 })
 export class AppComponent {
-  name = 'MY-ANGURAR-APP-STUDY';
+  name = 'MY-ANGULAR-APP-STUDY';
 
 
 }
