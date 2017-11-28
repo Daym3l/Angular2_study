@@ -1,0 +1,21 @@
+<div class="row">
+  <ul class="collection col l3">
+    <li class="collection-header"><h3>Classes</h3></li>
+    <li class=" collection-item" *ngFor="let hero of heroes" [class.active]="hero===selectedHero" (click)="onSelect(hero)">
+      <span class="badge"><img src="../../assets/img/26px-ClassIcon_deathknight.png"></span> {{hero.name | uppercase}}
+    </li>
+  </ul>
+
+ <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+
+</div>
+
+
+
+
+
+
+
+
+
