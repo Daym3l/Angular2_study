@@ -1,0 +1,15 @@
+<div class="col l7 left-align ajuste" *ngIf="hero">
+
+  <h5 class="blue-grey-text">{{hero.name | uppercase}} DETAILS</h5>
+  <div>
+   <span  class="blue-text">Name: </span>{{hero.name| uppercase}}
+  </div>
+  <br>
+  <div>
+    <span  class="blue-text">Roles: </span><p>{{hero.roles}}</p>
+  </div>
+  <div>
+    <span class="blue-text">Description: </span><p>{{hero.desc}}</p>
+  </div>
+
+</div>
