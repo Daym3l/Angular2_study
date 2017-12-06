@@ -1,12 +1,14 @@
 <div class="row">
   <ul class="collection col l3">
     <li class="collection-header"><h3>Classes</h3></li>
-    <li class=" collection-item" *ngFor="let hero of heroes" [class.active]="hero===selectedHero" (click)="onSelect(hero)">
+    <li class=" collection-item" *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
       <span class="badge"><img [src]="hero.img"></span> {{hero.name | uppercase}}
+      </a>
     </li>
   </ul>
 
- <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
 
 
 </div>

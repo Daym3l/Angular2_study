@@ -2,14 +2,16 @@
 
   <h5 class="blue-grey-text">{{hero.name | uppercase}} DETAILS</h5>
   <div>
-   <span  class="blue-text">Name: </span>{{hero.name| uppercase}}
+    <span class="blue-text">Name: </span>{{hero.name| uppercase}}
   </div>
   <br>
   <div>
-    <span  class="blue-text">Roles: </span><p>{{hero.roles}}</p>
+    <span class="blue-text">Roles: </span>
+    <p>{{hero.roles}}</p>
   </div>
   <div>
-    <span class="blue-text">Description: </span><p>{{hero.desc}}</p>
+    <span class="blue-text">Description: </span>
+    <p>{{hero.desc}}</p>
   </div>
-
+  <button (click)="goBack()">go back</button>
 </div>

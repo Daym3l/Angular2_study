@@ -1,0 +1,7 @@
+<div *ngIf="messageService.messages.length">
+  <div *ngFor='let message of messageService.messages'>  <div class="chip">
+    {{message}}
+    <i class="close material-icons">close</i>
+  </div> </div>
+
+</div>
